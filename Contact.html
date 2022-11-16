@@ -67,32 +67,58 @@
 
     <main>
       <div class="container">
+        <h1 class="text-center text-light">Contact</h1>
+
         <div class="row">
           <div class="col-12">
-            <h1 class="text-center text-light">Contact</h1>
-          </div>
+            <form
+              action="mailto:romaindespoul@gmail.com?subject=RcDeco"
+              method="post"
+              enctype="text/plain"
+            >
+              <div class="mb-3">
+                <label for="nom" class="form-label text-light">Nom</label>
+                <input type="text" class="form-control" id="nom" name="nom" />
+              </div>
+              <div class="mb-3">
+                <label for="prenom" class="form-label text-light">Prénom</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="prenom"
+                  name="prenom"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label text-light">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label text-light"
+                  >Message</label
+                >
+                <textarea
+                  class="form-control"
+                  id="message"
+                  name="message"
+                  rows="3"
+                ></textarea>
+              </div>
+              <button type="submit" onclick="info()" class="btn btn-primary">Envoyer</button>
+            </form>
         </div>
-        <div class="row">
-          <div class="col-6">
-              <form action="mailto:example@gmail.com" method="get" enctype="text/plain">
-                  <!-- TODO: faire un programme en php ou javascript qui envoie un mails a l'aide du formualire -->
-                  <div class="mb-3">
-                      <label class="form-label text-light">Nom / Prénom</label>
-                      <input type="text" name="name" class="form-control" />
-                  </div>
-                  <div class="mb-3">
-                      <label class="form-label text-light">Email</label>
-                      <input type="email" name="email" class="form-control" />
-                  </div>
-                  <div class="mb-3">
-                      <label class="form-label text-light">Message</label>
-                      <textarea name="comments" class="form-control" rows="8"></textarea>
-                  </div>
-                  <input class="btn btn-primary" type="submit" name="submit" value="Envoyer" />
-                  <input class="btn btn-primary" type="reset" name="reset" value="Réinitialiser" />
-              </form>
-          </div>
-        </div>
+        <script>
+          function info() {
+            alert("Veuillez envoyer un mail via la page qui vient de s'ouvrir");
+          }
+        </script>
+
+      </div>
       </div>
     </main>
 
