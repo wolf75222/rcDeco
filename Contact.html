@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <!-- CSS only -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
@@ -19,13 +20,14 @@
     ></script>
     <title>Document</title>
   </head>
+
   <body class="bg-dark">
     <!-- Navbar Responsive avec Boostrap -->
     <nav class="navbar navbar-expand-lg navbar-dark">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
           <img
-            src="svg/logo.svg"
+            src="public/svg/logo.svg"
             alt=""
             width="40"
             height="30"
@@ -58,7 +60,7 @@
           class="collapse navbar-collapse justify-content-end navbarNavAltMarkup"
         >
           <button type="button" class="btn btn-outline-light">
-            <img src="svg/login.svg" alt="" width="30" height="24" />
+            <img src="public/svg/login.svg" alt="" width="30" height="24" />
             Connectez-vous
           </button>
         </div>
@@ -109,16 +111,19 @@
                   rows="3"
                 ></textarea>
               </div>
-              <button type="submit" onclick="info()" class="btn btn-primary">Envoyer</button>
+              <button type="submit" onclick="info()" class="btn btn-primary">
+                Envoyer
+              </button>
             </form>
+          </div>
+          <script>
+            function info() {
+              alert(
+                "Veuillez envoyer un mail via la page qui vient de s'ouvrir"
+              );
+            }
+          </script>
         </div>
-        <script>
-          function info() {
-            alert("Veuillez envoyer un mail via la page qui vient de s'ouvrir");
-          }
-        </script>
-
-      </div>
       </div>
     </main>
 
@@ -126,7 +131,13 @@
       class="d-flex flex-wrap justify-content-center align-items-center py-5 my-4 border-top"
     >
       <div class="d-flex align-items-center">
-        <img src="svg/logo.svg" alt="" width="30" height="24" class="bi" />
+        <img
+          src="public/svg/logo.svg"
+          alt=""
+          width="30"
+          height="24"
+          class="bi"
+        />
         <span class="text-center text-muted"
           >© 2022 RC Deco Facade, By Sirwolf & KillianC</span
         >
