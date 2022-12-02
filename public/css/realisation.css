@@ -1,9 +1,0 @@
-.zoom {
-    transition: transform .2s; /* Animation */
-    filter: drop-shadow(0 0 0.3rem black);
-}
-
-    .zoom:hover {
-        transition: transform .2s;
-        transform: scale(1.02);
-    }
