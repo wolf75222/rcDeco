@@ -1,3 +1,4 @@
+
 .content h1 {
   color: hsl(0, 0%, 28%);
   font-weight: bold;
@@ -5,41 +6,27 @@
   letter-spacing: 7px;
   cursor: pointer;
   text-transform: uppercase;
+  animation: shadow 2s linear infinite;
 }
 
-.content h1 {
-  padding: 64px;
-  background: linear-gradient(
-    to right,
-    hsl(0, 0%, 30%) 0,
-    hsl(0, 0%, 100%) 10%,
-    hsl(0, 0%, 30%) 20%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: shine 2s infinite linear;
-}
-
-alert {
-  color: blue;
-  background-color: red;
-}
-
-@keyframes shine {
+@keyframes shadow {
   0% {
-    background-position: 0;
+    text-shadow: 0 0 10px hsl(0, 0%, 28%);
   }
-  60% {
-    background-position: 600px;
+  50% {
+    text-shadow: 0 0 20px hsl(0, 0%, 28%);
   }
   100% {
-    background-position: 600px;
+    text-shadow: 0 0 10px hsl(0, 0%, 28%);
   }
 }
 
 section {
-  min-height: 100vh;
+  height: 100vh;
+  width: 100vw;
+  
 }
+
 
 .reveal {
   position: relative;
