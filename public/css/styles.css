@@ -1,30 +1,29 @@
 
 .content h1 {
-  color: hsl(0, 0%, 28%);
-  font-weight: bold;
-  font-family: monospace;
-  letter-spacing: 7px;
-  cursor: pointer;
-  text-transform: uppercase;
-  animation: shadow 2s linear infinite;
+  background-image: url(https://media.giphy.com/media/t2aAdTgnU9Ie6jvG0W/giphy-downsized-large.gif);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 6em;
+  background-size: auto;
 }
 
-@keyframes shadow {
-  0% {
-    text-shadow: 0 0 10px hsl(0, 0%, 28%);
-  }
-  50% {
-    text-shadow: 0 0 20px hsl(0, 0%, 28%);
-  }
-  100% {
-    text-shadow: 0 0 10px hsl(0, 0%, 28%);
-  }
-}
+
 
 section {
   height: 100vh;
   width: 100vw;
   
+}
+
+.zoom {
+  transition: transform .2s; /* Animation */
+  filter: drop-shadow(0 0 0.3rem black);
+}
+
+.zoom:hover {
+      transition: transform .2s;
+      transform: scale(1.02);
 }
 
 
