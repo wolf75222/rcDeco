@@ -96,11 +96,19 @@
                             >
                                 Demander un devis
                             </button>
+                            <!-- ajoute un bouton explorer qui mene jusqua id explore -->
+                            <button
+                                type="button"
+                                class="btn btn-outline-dark btn-lg px-4 shadow"
+                                onclick="location.href='#explore'"
+                            >
+                                Explorer
+                            </button>
                         </div>
                     </div>
                 </div>
             </section>
-            <div class="divider reveal"></div>
+            <div class="divider reveal" id="explore"></div>
             <div class="container col-xxl-8 px-4 py-5 reveal">
                 <div
                     class="row flex-lg-row-reverse align-items-center g-5 py-5"
@@ -259,10 +267,30 @@
                 </div>
             </div>
         </main>
-        <footer
-            class="d-flex flex-wrap justify-content-center align-items-center py-4 mt-4 border-top bg-light"
-        >
-            <div class="d-flex align-items-center">
+        <footer class="py-3 my-4">
+            <ul class="nav justify-content-center border-top pb-3 mb-3">
+                <li class="nav-item">
+                    <a href="Acceuil.html" class="nav-link px-2 text-muted"
+                        >Acceuil</a
+                    >
+                </li>
+                <li class="nav-item">
+                    <a href="Realisation.html" class="nav-link px-2 text-muted"
+                        >Realisation</a
+                    >
+                </li>
+                <li class="nav-item">
+                    <a href="Intervention.html" class="nav-link px-2 text-muted"
+                        >Intervention</a
+                    >
+                </li>
+                <li class="nav-item">
+                    <a href="Contact.html" class="nav-link px-2 text-muted"
+                        >Contact</a
+                    >
+                </li>
+            </ul>
+            <div class="d-flex align-items-center justify-content-center">
                 <img
                     src="public/svg/logo.svg"
                     alt="logo"
@@ -280,7 +308,6 @@
                         >killianc3</a
                     ></span
                 >
-                <a href="#" class="btn btn-outline-warning mx-5">Top</a>
             </div>
         </footer>
     </body>
