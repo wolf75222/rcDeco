@@ -19,6 +19,8 @@ function reveal() {
     }
 }
 
+
+
 var nE = document.getElementById('erreur-nom');
 var pE = document.getElementById('erreur-prenom');
 var eE = document.getElementById('erreur-email');
@@ -108,12 +110,14 @@ function valideM() {
 
 }
 
-function valide() {
+function valide(event) {
     if (!valideN() && !valideP() && !valideE() && !valideM()) {
-        bs.innerHTML = '<i class="bi bi-send-exclamation"></i>';
+        bs.innerHTML = '<i class="bi bi-send-slash"></i> Envoyer';
+        /* Pour bloquer l'envoie */
+        event.preventDefault();
     }
     else {
-        bs.innerHTML = '<i class="bi bi-send"></i>';
+        bs.innerHTML = '<i class="bi bi-send"></i> Envoyer';
         info();
     }
 }
