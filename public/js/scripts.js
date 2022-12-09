@@ -110,8 +110,8 @@ function valideM() {
 
 }
 
-function valide(event) {
-    if (!valideN() && !valideP() && !valideE() && !valideM()) {
+async function valide(event) {
+    if (!valideN() || !valideP() || !valideE() || !valideM()) {
         bs.innerHTML = '<i class="bi bi-send-slash"></i> Envoyer';
         /* Pour bloquer l'envoie */
         event.preventDefault();
@@ -119,10 +119,16 @@ function valide(event) {
     else {
         bs.innerHTML = '<i class="bi bi-send"></i> Envoyer';
         info();
+        event.preventDefault();
+        await sleep(2000);
+        event.target.submit();
+        
     }
 }
 
-
+function sleep(milliseconds) {  
+    return new Promise(resolve => setTimeout(resolve, milliseconds));  
+ }  
 
 function info() {
     swal(
