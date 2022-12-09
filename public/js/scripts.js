@@ -68,7 +68,7 @@ function valideT() {
         tE.innerHTML = 'Veuillez spécifier votre numéro de téléphone.';
         return false;
     }
-    if (!tel.match(/^[0-9]+$/) || tel < 6) {
+    if (!tel.match(/^[0-9]+$/) || tel.length < 6) {
         tE.innerHTML = 'Veuillez spécifier un numéro de téléphone valide.';
         return false;
     }
