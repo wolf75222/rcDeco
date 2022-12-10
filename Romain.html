@@ -7,10 +7,488 @@
         <title>Romain</title>
         <!-- link css -->
         <link rel="stylesheet" href="public/css/styles.css" />
-        <!-- link js -->
-        <script src="public/js/script.js"></script>
+        <!-- CSS only -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+            crossorigin="anonymous"
+        />
+        <!-- JavaScript Bundle with Popper -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+            crossorigin="anonymous"
+        ></script>
+        <!-- icon boostrap -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+        />
     </head>
     <body>
+        <!-- navbar -->
+        <header id="header" class="d-flex flex-column justify-content-center">
+            <nav class="nav-menu">
+                <ul>
+                    <li class="">
+                        <a href="#home"
+                            ><i class="bi bi-house p-1"></i>
+                            <span>Accueil</span></a
+                        >
+                    </li>
+                    <li class="">
+                        <a href="#about"
+                            ><i class="bi bi-person p-1"></i>
+                            <span>À propos</span></a
+                        >
+                    </li>
+                    <li class="">
+                        <a href="#skills"
+                            ><i class="bi bi-tools p-1"></i>
+                            <span>Compétences</span></a
+                        >
+                    </li>
+                    <li class="">
+                        <a href="#resume"
+                            ><i class="bi bi-file-earmark-person p-1"></i>
+                            <span>CV</span></a
+                        >
+                    </li>
+                    <li class="">
+                        <a href="#contact"
+                            ><i class="bi bi-envelope-at p-1"></i>
+                            <span>Contact</span></a
+                        >
+                    </li>
+                </ul>
+            </nav>
+        </header>
 
+        <!-- section Acceuil -->
+        <section class="bg d-flex flex-column justify-content-center" id="home">
+            <div class="container">
+                <h1 class="display-2 fw-bold">Romain Despoullains</h1>
+                <div class="wrapper">
+                    <div class="static">Je suis</div>
+                    <ul class="dynamic">
+                        <li><span>étudiant en informatique.</span></li>
+                        <li><span>motivé et ambitieux.</span></li>
+                        <li><span>organisé et responsable.</span></li>
+                        <li><span>autonome et communicatif.</span></li>
+                    </ul>
+                </div>
+                <div class="link">
+                    <button
+                        type="button"
+                        class="btn btn-outline-primary btn-lg px-4 shadow-lg"
+                        onclick="location.href='#explore'"
+                    >
+                        <i class="bi bi-arrow-right-circle-fill"></i>
+                        Explorer
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- section A propos -->
+        <section id="about">
+            <div class="container" id="explore">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="about-img">
+                            <img
+                                src="public/images/romain.jpeg"
+                                alt="romain"
+                                class="img-fluid p-5 rounded-pill m-5"
+                            />
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="about-content">
+                            <h2
+                                class="display-5 text-center border-bottom border-primary border-3 p-5 m-5 fw-bold"
+                            >
+                                À propos de moi
+                            </h2>
+                            <p class="m-4 about">
+                                Je suis actuellement étudiant en première année
+                                de licence informatique à l'université de Reims.
+                                J'ai choisi ce domaine de formation car j'ai
+                                toujours été passionné par les technologies de
+                                l'information et j'ai une forte aptitude pour
+                                les mathématiques et la logique.
+                                <br />
+                                Je suis quelqu'un de très motivé et ambitieux,
+                                j'aime relever de nouveaux défis et apprendre de
+                                nouvelles choses. Je suis également quelqu'un de
+                                très organisé et responsable, j'aime travailler
+                                en équipe et communiquer avec les autres.
+                            </p>
+
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <ul class="m-3">
+                                        <li class="dc-none p-2">
+                                            <i
+                                                class="bi bi-chevron-right text-primary"
+                                            ></i>
+                                            <strong>Nom:</strong>
+                                            <span>Despoullains</span>
+                                        </li>
+                                        <li class="dc-none p-2">
+                                            <i
+                                                class="bi bi-chevron-right text-primary"
+                                            ></i>
+                                            <strong>Prénom:</strong>
+                                            <span>Romain</span>
+                                        </li>
+                                        <li class="dc-none p-2">
+                                            <i
+                                                class="bi bi-chevron-right text-primary"
+                                            ></i>
+                                            <strong>Age:</strong>
+                                            <span>18 ans</span>
+                                        </li>
+                                        <li class="dc-none p-2">
+                                            <i
+                                                class="bi bi-chevron-right text-primary"
+                                            ></i>
+                                            <strong>Adresse:</strong>
+                                            <span
+                                                >24 rue gambetta, 51100
+                                                Reims</span
+                                            >
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-6">
+                                    <ul class="m-3">
+                                        <li class="dc-none p-2">
+                                            <i
+                                                class="bi bi-chevron-right text-primary"
+                                            ></i>
+                                            <strong>Email:</strong>
+                                            <span>romaindespoul@gmail.com</span>
+                                        </li>
+                                        <li class="dc-none p-2">
+                                            <i
+                                                class="bi bi-chevron-right text-primary"
+                                            ></i>
+                                            <strong>Tel:</strong>
+                                            <span>07 88 69 26 08</span>
+                                        </li>
+                                        <li class="dc-none p-2">
+                                            <i
+                                                class="bi bi-chevron-right text-primary"
+                                            ></i>
+                                            <strong>Permis:</strong>
+                                            <span>B</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="skills">
+            <div class="container skills">
+                <div class="section-title">
+                    <h2
+                        class="display-4 text-center border-bottom border-primary border-3 p-5 m-5 fw-bold"
+                    >
+                        Compétences
+                    </h2>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-6">
+                            <div class="skills-content">
+                                <h3 class="fw-bold display-5 text-center p-2">
+                                    Langages
+                                </h3>
+                                <div class="progress m-4">
+                                    <div
+                                        class="progress-bar"
+                                        role="progressbar"
+                                        style="width: 90%"
+                                        aria-valuenow="90"
+                                        aria-valuemin="0"
+                                        aria-valuemax="100"
+                                    >
+                                        Java
+                                    </div>
+                                </div>
+                                <div class="progress m-4">
+                                    <div
+                                        class="progress-bar"
+                                        role="progressbar"
+                                        style="width: 80%"
+                                        aria-valuenow="80"
+                                        aria-valuemin="0"
+                                        aria-valuemax="100"
+                                    >
+                                        HTML5
+                                    </div>
+                                </div>
+                                <div class="progress m-4">
+                                    <div
+                                        class="progress-bar"
+                                        role="progressbar"
+                                        style="width: 60%"
+                                        aria-valuenow="60"
+                                        aria-valuemin="0"
+                                        aria-valuemax="100"
+                                    >
+                                        CSS3
+                                    </div>
+                                </div>
+                                <div class="progress m-4">
+                                    <div
+                                        class="progress-bar"
+                                        role="progressbar"
+                                        style="width: 70%"
+                                        aria-valuenow="70"
+                                        aria-valuemin="0"
+                                        aria-valuemax="100"
+                                    >
+                                        Javascript
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="progress m-4">
+                                <div
+                                    class="progress-bar"
+                                    role="progressbar"
+                                    style="width: 80%"
+                                    aria-valuenow="80"
+                                    aria-valuemin="0"
+                                    aria-valuemax="100"
+                                >
+                                    Python
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <h3 class="fw-bold display-5 text-center p-2">Autres</h3>
+            <ul class="m-3 text-center">
+                <li class="dc-none p-2">
+                    <i class="bi bi-chevron-right text-primary"></i>
+                    <span>microsoft word/excel/powerpoint</span>
+                </li>
+                <li class="dc-none p-2">
+                    <i class="bi bi-chevron-right text-primary"></i>
+                    <span>adobe photoshop/premierePro</span>
+                </li>
+                <li class="dc-none p-2">
+                    <i class="bi bi-chevron-right text-primary"></i>
+                    <span>gestion et organisation de projet</span>
+                </li>
+                <li class="dc-none p-2">
+                    <i class="bi bi-chevron-right text-primary"></i>
+                    <span>communication professionelle</span>
+                </li>
+                <li class="dc-none p-2">
+                    <i class="bi bi-chevron-right text-primary"></i>
+                    <span>anglais, niveau B1</span>
+                </li>
+            </ul>
+        </div>
+        </section>
+        <section id="resume" class="resume">
+            <div class="container aos-init aos-animate" data-aos="fade-up">
+                <div class="section-title">
+                    <h2
+                        class="display-4 text-center border-bottom border-primary border-3 p-5 m-5 fw-bold"
+                    >
+                        CV
+                    </h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h3 class="resume-title">Sommaire</h3>
+                        <div class="resume-item pb-0">
+                            <h4>Romain Despoullains</h4>
+                            <p>
+                                <em
+                                    >Étudiant en cursus master en ingénierie et
+                                    simulation numérique à URCA,
+                                </em>
+                            </p>
+                            <ul>
+                                <li>Reims, France</li>
+                                <li>+33 7 88 69 26 08</li>
+                                <li>romaindespoul@gmail.com</li>
+                            </ul>
+                        </div>
+
+                        <h3 class="resume-title">Parcours Scolaire</h3>
+                        <div class="resume-item">
+                            <h4>Cursus Master en Ingénierie informatique</h4>
+                            <h5>2022 / 2023 - Aujourd'hui</h5>
+                            <p>
+                                <em>URCA Grand-est, Reims, France</em>
+                            </p>
+                            <p>
+                                Cursus Master en Ingénierie informatique et
+                                simulation numérique, Licence informatique 1re
+                                année.
+                            </p>
+                        </div>
+                        <div class="resume-item">
+                            <h4>Baccalauréat général</h4>
+                            <h5>2020 - 2021</h5>
+                            <p>
+                                <em>Lycée Thomas masaryk, Vouziers, France</em>
+                            </p>
+                            <p>
+                                Baccalauréat général, spécialités mathématiques
+                                et physique-chimie, avec l'option maths
+                                expertes.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <h3 class="resume-title">
+                            Éxperiences professionnelles
+                        </h3>
+                        <div class="resume-item">
+                            <h4>Stage, 1 semaine</h4>
+                            <h5>2019</h5>
+                            <p><em>SEISAAM, Clermont en argonne, France</em></p>
+                            <ul>
+                                <li>Depannage technique</li>
+                                <li>
+                                    Administration de serveurs et de réseaux.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- section contact -->
+        <section id="contact" class="contact">
+            <div class="section-title">
+                <h2
+                    class="display-4 text-center border-bottom border-primary border-3 p-5 m-5 fw-bold"
+                >
+                    Conctact
+                </h2>
+            </div>
+            <div class="container col-xxl-8 px-4 py-5">
+                <div class="row flex-lg-row-reverse g-5 py-5">
+                    <div class="col-11 col-sm-9 col-lg-7">
+                        <form
+                            class="p-4 p-md-4 border rounded-3 bg-light shadow-lg"
+                            action="mailto:romaindespoul@gmail.com?subject=CV"
+                            method="post"
+                            enctype="text/plain"
+                            onsubmit="return valide(event)"
+                        >
+                            <div class="form-floating mb-3">
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="floatingNom"
+                                    placeholder="nom"
+                                    name="nom"
+                                    onkeyup="valideN()"
+                                />
+                                <label for="floatingNom">Nom</label>
+                                <span id="erreur-nom"></span>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="floatingPrenom"
+                                    placeholder="prenom"
+                                    name="prenom"
+                                    onkeyup="valideP()"
+                                />
+                                <label for="floatingPrenom">Prenom</label>
+                                <span id="erreur-prenom"></span>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input
+                                    type="tel"
+                                    class="form-control"
+                                    id="floatingTel"
+                                    placeholder="Tel"
+                                    name="tel"
+                                    onkeyup="valideT()"
+                                />
+                                <label for="floatingTel">XX XX XX XX XX</label>
+                                <span id="erreur-tel"></span>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input
+                                    type="email"
+                                    class="form-control"
+                                    id="floatingEmail"
+                                    placeholder="Email"
+                                    name="email"
+                                    onkeyup="valideE()"
+                                />
+                                <label for="floatingEmail"
+                                    >exemple@exemple.com</label
+                                >
+                                <span id="erreur-email"></span>
+                            </div>
+                            <div class="form-group mb-3">
+                                <textarea
+                                    class="form-control"
+                                    name="message"
+                                    rows="3"
+                                    id="floatingMessage"
+                                    placeholder="Taper votre message ici"
+                                    onkeyup="valideM()"
+                                ></textarea>
+                                <span id="erreur-message"></span>
+                            </div>
+                            <button
+                                type="submit"
+                                onclick="valide()"
+                                id="bouton-submit"
+                                class="w-100 btn btn-lg btn-primary"
+                            >
+                                Envoyer
+                            </button>
+                        </form>
+                    </div>
+                    <div class="col-lg-5">
+                        <h1 class="display-5 fw-bold lh-1 mb-4 text-start">
+                            Despoullains Romain
+                        </h1>
+                        <ul class="lead">
+                            <li class="text-start">
+                                Zone de déplacement : Grand-est
+                            </li>
+                            <li class="text-start">
+                                24 rue gambetta 51100 Reims
+                            </li>
+                            <li class="text-start">romaindespoul@gmail.com</li>
+                            <li class="text-start">07 88 69 26 08</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- footer -->
+        <footer class="py-3 my-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+              <li class="nav-item"><a href="#home" class="nav-link px-2 text-muted">Acceuil</a></li>
+              <li class="nav-item"><a href="#about" class="nav-link px-2 text-muted">À propos</a></li>
+              <li class="nav-item"><a href="#skills" class="nav-link px-2 text-muted">Compétences</a></li>
+              <li class="nav-item"><a href="#resume" class="nav-link px-2 text-muted">CV</a></li>
+              <li class="nav-item"><a href="#contact" class="nav-link px-2 text-muted">Contact</a></li>
+            </ul>
+            <p class="text-center text-muted">© 2022 Despoullains, Romain</p>
+          </footer>
+        <!-- link js -->
+        <script src="public/js/scripts.js"></script>
     </body>
 </html>
