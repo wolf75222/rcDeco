@@ -119,5 +119,3 @@ function info() {
         "success"
     );
 }
-
-
