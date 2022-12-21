@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="public/css/styles.css" />
+        <link rel="icon" href="public/images/logo.ico" />
+        <!-- CSS only -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+            crossorigin="anonymous"
+        />
+        <!-- JavaScript Bundle with Popper -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+            crossorigin="anonymous"
+        ></script>
+        <!-- Sweet  Alert -->
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <!-- icon boostrap -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+        />
+        <title>Rc Déco Façade Contact</title>
+    </head>
+    <body>
+        <!-- Navbar Responsive avec Boostrap -->
+        <nav class="navbar navbar-expand-lg border-bottom bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img
+                        src="public/svg/logo.svg"
+                        alt=""
+                        width="40"
+                        height="30"
+                        class="d-inline-block align-text-top img-fluid"
+                    />
+                </a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="Acceuil.html">Acceuil</a>
+                        <a class="nav-link" href="Realisation.html"
+                            >Réalisation</a
+                        >
+                        <a class="nav-link" href="Intervention.html"
+                            >Interventions</a
+                        >
+                        <a
+                            class="nav-link active"
+                            aria-current="page"
+                            href="Contact.html"
+                            >Contact</a
+                        >
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <main>
+            <div class="container col-xxl-8 px-4 py-5">
+                <div class="row flex-lg-row-reverse g-5 py-5">
+                    <div class="col-11 col-sm-9 col-lg-7">
+                        <form
+                            class="p-4 p-md-4 border rounded-3 bg-light shadow-lg"
+                            action="mailto:romuald@rc-decofacade.fr?subject=RcDeco"
+                            method="post"
+                            enctype="text/plain"
+                            onsubmit="return valide(event)"
+                        >
+                            <div class="form-floating mb-3">
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="floatingNom"
+                                    placeholder="nom"
+                                    name="nom"
+                                    onkeyup="valideN()"
+                                />
+                                <label for="floatingNom">Nom</label>
+                                <span id="erreur-nom"></span>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="floatingPrenom"
+                                    placeholder="prenom"
+                                    name="prenom"
+                                    onkeyup="valideP()"
+                                />
+                                <label for="floatingPrenom">Prenom</label>
+                                <span id="erreur-prenom"></span>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input
+                                    type="tel"
+                                    class="form-control"
+                                    id="floatingTel"
+                                    placeholder="Tel"
+                                    name="tel"
+                                    onkeyup="valideT()"
+                                />
+                                <label for="floatingTel">XX XX XX XX XX</label>
+                                <span id="erreur-tel"></span>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input
+                                    type="email"
+                                    class="form-control"
+                                    id="floatingEmail"
+                                    placeholder="Email"
+                                    name="email"
+                                    onkeyup="valideE()"
+                                />
+                                <label for="floatingEmail"
+                                    >exemple@exemple.com</label
+                                >
+                                <span id="erreur-email"></span>
+                            </div>
+                            <div class="form-group mb-3">
+                                <textarea
+                                    class="form-control"
+                                    name="message"
+                                    rows="3"
+                                    id="floatingMessage"
+                                    placeholder="Taper votre message ici"
+                                    onkeyup="valideM()"
+                                ></textarea>
+                                <span id="erreur-message"></span>
+                            </div>
+                            <button
+                                type="submit"
+                                onclick="valide()"
+                                id="bouton-submit"
+                                class="w-100 btn btn-lg btn-primary"
+                            >
+                                Envoyer
+                            </button>
+                        </form>
+                    </div>
+                    <div class="col-lg-5">
+                        <h1 class="display-5 fw-bold lh-1 mb-4 text-start">
+                            Parlons de votre projet.
+                        </h1>
+                        <ul class="lead">
+                            <li class="text-start">
+                                Zone de déplacement : Epernay et environs
+                            </li>
+                            <li class="text-start">
+                                19 rue de la Paix 51 530 MARDEUIL
+                            </li>
+                            <li class="text-start">romuald@rc-decofacade.fr</li>
+                            <li class="text-start">06 88 67 57 80</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="py-3 my-4">
+            <ul class="nav justify-content-center border-top pb-3 mb-3">
+                <li class="nav-item">
+                    <a href="Acceuil.html" class="nav-link px-2 text-muted"
+                        >Acceuil</a
+                    >
+                </li>
+                <li class="nav-item">
+                    <a href="Realisation.html" class="nav-link px-2 text-muted"
+                        >Realisation</a
+                    >
+                </li>
+                <li class="nav-item">
+                    <a href="Intervention.html" class="nav-link px-2 text-muted"
+                        >Intervention</a
+                    >
+                </li>
+                <li class="nav-item">
+                    <a href="Contact.html" class="nav-link px-2 text-muted"
+                        >Contact</a
+                    >
+                </li>
+                <li class="nav-item">
+                    <a href="Legal.html" class="nav-link px-2 text-muted"
+                        >Mentions légales</a
+                    >
+                </li>
+            </ul>
+            <div class="d-flex align-items-center justify-content-center">
+                <img
+                    src="public/svg/logo.svg"
+                    alt="logo"
+                    width="30"
+                    height="24"
+                    class="bi"
+                    style="margin-right: 6px"
+                />
+                <span class="text-center text-muted"
+                    >© 2022 RC Deco Facade par
+                    <a href="#" target="_blank" style="color: inherit"
+                        >Romain</a
+                    >
+                </span>
+            </div>
+        </footer>
+        <script src="public/js/scripts.js"></script>
+    </body>
+</html>

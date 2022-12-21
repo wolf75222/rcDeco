@@ -1,0 +1,88 @@
+
+
+.content h1 {
+    background-image: url(https://media.giphy.com/media/t2aAdTgnU9Ie6jvG0W/giphy-downsized-large.gif);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 6em;
+    background-size: auto;
+}
+
+section {
+    height: 100vh;
+    width: 100vw;
+}
+
+.zoom {
+    transition: transform 0.2s; /* Animation */
+    filter: drop-shadow(0 0 0.3rem black);
+}
+
+.zoom:hover {
+    transition: transform 0.2s;
+    transform: scale(1.02);
+}
+
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.reveal.active {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.divider {
+    height: 3rem;
+    background-color: rgba(0, 0, 0, 0.1);
+    border: solid rgba(0, 0, 0, 0.15);
+    border-width: 1px 0;
+    overflow-x: hidden;
+    box-shadow: inset 0 0.5em 1.5em rgb(0 0 0 / 10%),
+        inset 0 0.125em 0.5em rgb(0 0 0 / 15%);
+}
+
+.form-floating span {
+    color: #dc3545;
+    font-size: 80%;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-top: 0.25rem;
+}
+
+.form-floating span i {
+    color: #28a745;
+}
+
+.form-group span {
+    color: #dc3545;
+    font-size: 80%;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-top: 0.25rem;
+}
+
+.form-group span i {
+    color: #28a745;
+}
+
+.bg {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/bg.jpeg);
+    background-color: rgba(255, 255, 255, 0.7);
+    background-blend-mode: lighten;
+    background-size: cover;
+    position: relative;
+    padding-left: 160px;
+}
+
+.navbar-bg {
+    background-image: url(../images/bg.jpeg);
+    background-color: rgba(255, 255, 255, 0.7);
+    background-size: cover; 
+}
